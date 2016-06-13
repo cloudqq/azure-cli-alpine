@@ -1,10 +1,10 @@
 FROM alpine:3.3
 
+MAINTAINER cloudqq <cloudqq@gmail.com>
+
 ENV VERSION=v4.4.5 NPM_VERSION=2
 
-
 WORKDIR /root
-
 
 RUN apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libstdc++ gnupg && \
   gpg --keyserver pool.sks-keyservers.net --recv-keys 9554F04D7259F04124DE6B476D5A82AC7E37093B && \
